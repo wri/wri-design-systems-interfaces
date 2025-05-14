@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${acuminPro.className} antialiased`}>
         <Providers>
-          <div className='h-[calc(100vh-56px)]'>{children}</div>
+          <div className='min-h-[calc(100vh-56px)] overflow-y-auto'>{children}</div>
           <Footer />
         </Providers>
       </body>

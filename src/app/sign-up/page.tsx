@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const SignUp = () => {
   return (
-    <div className='flex row items-center justify-between h-full pl-20'>
+    <div className='w-full flex row items-center justify-between gap-6 py-20 pl-20'>
       <div className='w-[400px]'>
         <div>
           <p className='text-3xl font-bold mb-2'>Create an account</p>
