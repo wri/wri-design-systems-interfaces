@@ -7,7 +7,7 @@ export default function Home() {
     <div className='App'>
       <div className='app-container'>
         <h1 style={{ marginBottom: '20px' }}>
-          Welcome to WRI Design Systems Patterns
+          Welcome to WRI Design Systems Interfaces
         </h1>
         <div className='flex gap-3'>
           <Link href='/sign-in' className='underline cursor-pointer'>

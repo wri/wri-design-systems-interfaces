@@ -1,6 +1,6 @@
 {
-  "name": "wri-design-systems-patterns",
-  "version": "1.0.1",
+  "name": "wri-design-systems-interfaces",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
