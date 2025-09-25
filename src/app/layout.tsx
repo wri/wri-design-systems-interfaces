@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import Providers from '@/components/Providers'
 import { Footer } from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 const acuminPro = localFont({
   src: [
@@ -33,7 +34,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${acuminPro.className} antialiased`}>
         <Providers>
-          <div className='min-h-[calc(100vh-56px)] overflow-y-auto'>{children}</div>
+          <Navbar />
+          {/* <div className='min-h-[calc(100vh-56px-48px)] lg:min-h-[calc(100vh-56px-96px)] 1121:min-h-[calc(100vh-56px-48px)] overflow-y-auto bg-red-200'> */}
+            {children}
+          {/* </div> */}
           <Footer />
         </Providers>
       </body>

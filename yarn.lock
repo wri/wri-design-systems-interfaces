@@ -922,10 +922,10 @@
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz#7fd81d89e34a711d398ca87f6d5842735d49721e"
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
-"@worldresources/wri-design-systems@^2.126.1":
-  version "2.126.1"
-  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.126.1.tgz#780339e42f6522a58f3f417aef0b59b5442cf17c"
-  integrity sha512-+0sJrjeOAWyctc52jcDA5oveDMF+1t2fbovgTd1IJbts4OPjSrRTAS6wpBfva0vJraGawWo40dEVn31H4j9ijw==
+"@worldresources/wri-design-systems@^2.133.2":
+  version "2.133.2"
+  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.133.2.tgz#49fd477c91073278b5a217f429c31bbc9f1405f5"
+  integrity sha512-B5v0bOLcieHpWowekNj/P3kXExpzXBXBnmtzl+SPy8xEXAbHMKE0Ud3C+V326RAkg+2FIAxE8kbNfRi6mzF4pA==
 
 "@zag-js/accordion@1.12.0":
   version "1.12.0"
