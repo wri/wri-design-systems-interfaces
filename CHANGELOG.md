@@ -5,6 +5,7 @@
 ## [v1.0.3] - 09-27-2025
 
 - [Forms] - Multi-page form (Single question)
+- [Sign In] - [Sign Up] - UI updates
 
 ## [v1.0.2] - 09-25-2025
 
