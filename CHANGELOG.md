@@ -1,6 +1,10 @@
 # Changelog
 
-## [v1.0.4] - WIP
+## [v1.0.5] - WIP
+
+## [v1.0.4] - 09-27-2025
+
+- [Forms] - Multi-page form (Single Section)
 
 ## [v1.0.3] - 09-27-2025
 

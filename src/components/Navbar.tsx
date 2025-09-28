@@ -22,7 +22,9 @@ const Navbar = () => {
   const [language, setLanguage] = useState('')
   const pathname = usePathname()
 
-  const hideNavbar = pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION
+  const hideNavbar =
+    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION ||
+    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION
   if (hideNavbar) {
     return null
   }

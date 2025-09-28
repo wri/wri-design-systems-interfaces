@@ -8,7 +8,9 @@ import { ROUTES } from '@/constants'
 export const Footer = () => {
   const pathname = usePathname()
 
-  const hideFooter = pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION
+  const hideFooter =
+    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION ||
+    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION
   if (hideFooter) {
     return null
   }

@@ -40,6 +40,12 @@ export default function Home() {
                 >
                   Single Question
                 </Link>
+                <Link
+                  href={ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION}
+                  className='underline cursor-pointer'
+                >
+                  Single Section
+                </Link>
 
                 <hr className='my-2' />
               </div>

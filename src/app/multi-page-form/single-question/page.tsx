@@ -26,6 +26,14 @@ const steps = [
     label: 'Label 3',
     value: 'step-3',
   },
+  {
+    label: 'Label 4',
+    value: 'step-4',
+  },
+  {
+    label: 'Label 5',
+    value: 'step-5',
+  },
 ]
 
 const MultiPageFormSingleQuestion = () => {
@@ -123,7 +131,6 @@ const MultiPageFormSingleQuestion = () => {
                   label=''
                   caption='Caption'
                   placeholder='Placeholder'
-                  required
                 />
               </div>
             )}
@@ -148,6 +155,38 @@ const MultiPageFormSingleQuestion = () => {
                   },
                 ]}
               />
+            )}
+            {currentStep === 4 && (
+              <CheckboxList
+                label=''
+                caption='Caption'
+                checkboxes={[
+                  {
+                    children: 'Checkbox 1',
+                    name: 'checkbox-1',
+                    value: 'checkbox-1',
+                  },
+                  {
+                    children: 'Checkbox 2',
+                    name: 'checkbox-2',
+                    value: 'checkbox-2',
+                  },
+                  {
+                    children: 'Checkbox 3',
+                    name: 'checkbox-3',
+                    value: 'checkbox-3',
+                  },
+                ]}
+              />
+            )}
+            {currentStep === 5 && (
+              <div className='max-w-72'>
+                <TextInput
+                  label=''
+                  caption='Caption'
+                  placeholder='Placeholder'
+                />
+              </div>
             )}
 
             <Button

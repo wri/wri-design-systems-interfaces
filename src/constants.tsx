@@ -6,5 +6,6 @@ export const ROUTES = {
   },
   MULTI_PAGE_FORMS: {
     SINGLE_QUESTION: '/multi-page-form/single-question',
+    SINGLE_SECTION: '/multi-page-form/single-section',
   },
 }
