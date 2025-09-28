@@ -5,6 +5,7 @@ import { Menu, Navbar as WriNavbar } from '@worldresources/wri-design-systems'
 import Link from 'next/link'
 import { WriLogoIcon } from './icons'
 import { usePathname } from 'next/navigation'
+import { ROUTES } from '@/constants'
 
 const languages = [
   {
@@ -21,10 +22,15 @@ const Navbar = () => {
   const [language, setLanguage] = useState('')
   const pathname = usePathname()
 
+  const hideNavbar = pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION
+  if (hideNavbar) {
+    return null
+  }
+
   return (
     <WriNavbar
       logo={
-        <Link href='/'>
+        <Link href={ROUTES.HOME}>
           <WriLogoIcon height='32px' width='92px' />
         </Link>
       }
@@ -105,7 +111,6 @@ const Navbar = () => {
         { label: 'Sign in', onClick: () => {} },
       ]}
       maxWidth={1440}
-      onNavbarHeightChange={(height: number) => console.log(55, height)}
       fixed
     />
   )

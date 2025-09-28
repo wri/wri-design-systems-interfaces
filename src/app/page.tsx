@@ -1,5 +1,6 @@
 'use client'
 
+import { ROUTES } from '@/constants'
 import { Panel } from '@worldresources/wri-design-systems'
 import Link from 'next/link'
 
@@ -16,12 +17,31 @@ export default function Home() {
             }
             content={
               <div className='flex flex-col gap-2 p-5'>
-                <Link href='/sign-in' className='underline cursor-pointer'>
+                <h2 className='text-lg font-bold'>Auth</h2>
+                <Link
+                  href={ROUTES.AUTH.SIGN_IN}
+                  className='underline cursor-pointer'
+                >
                   Sign In
                 </Link>
-                <Link href='/sign-up' className='underline cursor-pointer'>
+                <Link
+                  href={ROUTES.AUTH.SIGN_UP}
+                  className='underline cursor-pointer'
+                >
                   Sign Up
                 </Link>
+
+                <hr className='my-2' />
+
+                <h2 className='text-lg font-bold'>Multi Page Forms</h2>
+                <Link
+                  href={ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION}
+                  className='underline cursor-pointer'
+                >
+                  Single Question
+                </Link>
+
+                <hr className='my-2' />
               </div>
             }
           />
