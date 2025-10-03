@@ -8,4 +8,7 @@ export const ROUTES = {
     SINGLE_QUESTION: '/multi-page-form/single-question',
     SINGLE_SECTION: '/multi-page-form/single-section',
   },
+  SINGLE_PAGE_FORMS: {
+    MULTIPLE_SECTIONS: '/single-page-form/multiple-sections',
+  },
 }
