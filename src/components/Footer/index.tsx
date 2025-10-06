@@ -10,7 +10,9 @@ export const Footer = () => {
 
   const hideFooter =
     pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION ||
-    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION
+    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION ||
+    pathname === ROUTES.SINGLE_PAGE_FORMS.MULTIPLE_SECTIONS ||
+    pathname === ROUTES.SINGLE_PAGE_FORMS.COLLAPSIBLE_SECTIONS
   if (hideFooter) {
     return null
   }
