@@ -35,8 +35,8 @@ const header = (
 
 const SinglePageFormMultipleSections = () => {
   return (
-    <div className='py-16 w-full min-h-[calc(100vh-56px-48px)] lg:min-h-[calc(100vh-56px-96px)] 1121:min-h-[calc(100vh-56px-48px)] max-w-[1440px] flex flex-col 1121:items-center 1121:justify-center overflow-y-auto mx-auto'>
-      <div className='w-full max-w-[560px] px-3 sm:px-5'>
+    <div className='max-w-[560px] py-16 w-full flex flex-col overflow-y-auto mx-auto'>
+      <div>
         <div className='my-4 flex items-center justify-between sm:hidden px-0'>
           <WriLogoIcon height='40px' width='120px' />
           <Tag
@@ -48,7 +48,7 @@ const SinglePageFormMultipleSections = () => {
         <div className='hidden sm:block my-[50px] mx-auto w-fit'>
           <WriLogoIcon height='64px' width='184px' />
         </div>
-        <div className='border border-gray-300 rounded-[10px] overflow-hidden mb-6'>
+        <div className='border border-gray-300 m-auto rounded-none sm:rounded-[10px] overflow-hidden mb-6 w-full  '>
           <Panel
             width='full'
             header={<div>{header}</div>}
@@ -67,166 +67,171 @@ const SinglePageFormMultipleSections = () => {
             }
           />
         </div>
-        <div className='border border-gray-300 rounded-[10px] overflow-hidden mb-6'>
-          <Panel
-            width='full'
-            header={
-              <div className='flex justify-between items-center px-4 py-3 sm:rounded-t-lg'>
-                <p className='text-neutral-900'>Step 1</p>
-              </div>
-            }
-            content={
-              <div className='p-6'>
-                <p className='text-3xl font-bold text-neutral-800 mb-1'>
-                  Section title
-                </p>
-                <p className='text-neutral-700 mb-3'>Section description</p>
-                <p className='text-sm'>
-                  Fields marked with <span className='text-error-500'>*</span>{' '}
-                  are required.
-                </p>
-                <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
+        <div className='bg-neutral-200 p-6 sm:bg-transparent sm:p-0'>
+          <div className='border border-gray-300 m-auto rounded-[10px] overflow-hidden mb-6 w-full '>
+            <Panel
+              width='full'
+              header={
+                <div className='flex justify-between items-center px-4 py-3 sm:rounded-t-lg'>
+                  <p className='text-neutral-900'>Step 1</p>
+                </div>
+              }
+              content={
+                <div className='p-6'>
+                  <p className='text-3xl font-bold text-neutral-800 mb-1'>
+                    Section title
+                  </p>
+                  <p className='text-neutral-700 mb-3'>Section description</p>
+                  <p className='text-sm'>
+                    Fields marked with <span className='text-error-500'>*</span>{' '}
+                    are required.
+                  </p>
+                  <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
 
-                <CheckboxList
-                  label='Label'
-                  caption='Caption'
-                  checkboxes={[
-                    {
-                      children: 'Checkbox 1',
-                      name: 'checkbox-1',
-                      value: 'checkbox-1',
-                    },
-                    {
-                      children: 'Checkbox 2',
-                      name: 'checkbox-2',
-                      value: 'checkbox-2',
-                    },
-                    {
-                      children: 'Checkbox 3',
-                      name: 'checkbox-3',
-                      value: 'checkbox-3',
-                    },
-                  ]}
-                  required
-                />
-                <hr className='my-6 sm:my-8' />
-                <div className='max-w-72'>
-                  <TextInput
+                  <CheckboxList
                     label='Label'
                     caption='Caption'
-                    placeholder='Placeholder'
+                    checkboxes={[
+                      {
+                        children: 'Checkbox 1',
+                        name: 'checkbox-1',
+                        value: 'checkbox-1',
+                      },
+                      {
+                        children: 'Checkbox 2',
+                        name: 'checkbox-2',
+                        value: 'checkbox-2',
+                      },
+                      {
+                        children: 'Checkbox 3',
+                        name: 'checkbox-3',
+                        value: 'checkbox-3',
+                      },
+                    ]}
+                    required
+                  />
+                  <hr className='my-6 sm:my-8' />
+                  <div className='max-w-72'>
+                    <TextInput
+                      label='Label'
+                      caption='Caption'
+                      placeholder='Placeholder'
+                      required
+                    />
+                  </div>
+                  <hr className='my-6 sm:my-8' />
+                  <RadioList
+                    label='Label'
+                    caption='Caption'
+                    name='radio-list-1'
+                    onCheckedChange={() => {}}
+                    radios={[
+                      {
+                        children: 'Radio 1',
+                        value: 'radio-1',
+                      },
+                      {
+                        children: 'Radio 2',
+                        value: 'radio-2',
+                      },
+                      {
+                        children: 'Radio 3',
+                        value: 'radio-3',
+                      },
+                    ]}
                     required
                   />
                 </div>
-                <hr className='my-6 sm:my-8' />
-                <RadioList
-                  label='Label'
-                  caption='Caption'
-                  name='radio-list-1'
-                  onCheckedChange={() => {}}
-                  radios={[
-                    {
-                      children: 'Radio 1',
-                      value: 'radio-1',
-                    },
-                    {
-                      children: 'Radio 2',
-                      value: 'radio-2',
-                    },
-                    {
-                      children: 'Radio 3',
-                      value: 'radio-3',
-                    },
-                  ]}
-                  required
-                />
-              </div>
-            }
-          />
-        </div>
-        <div className='border border-gray-300 rounded-[10px] overflow-hidden mb-6'>
-          <Panel
-            width='full'
-            header={
-              <div className='flex justify-between items-center px-4 py-3 sm:rounded-t-lg'>
-                <p className='text-neutral-900'>Step 2</p>
-              </div>
-            }
-            content={
-              <div className='p-6'>
-                <p className='text-3xl font-bold text-neutral-800 mb-1'>
-                  Section title
-                </p>
-                <p className='text-neutral-700 mb-3'>Section description</p>
-                <p className='text-sm'>
-                  Fields marked with <span className='text-error-500'>*</span>{' '}
-                  are required.
-                </p>
-                <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
+              }
+            />
+          </div>
+          <div className='border border-gray-300 m-auto rounded-[10px] overflow-hidden mb-6 w-full '>
+            <Panel
+              width='full'
+              header={
+                <div className='flex justify-between items-center px-4 py-3 sm:rounded-t-lg'>
+                  <p className='text-neutral-900'>Step 2</p>
+                </div>
+              }
+              content={
+                <div className='p-6'>
+                  <p className='text-3xl font-bold text-neutral-800 mb-1'>
+                    Section title
+                  </p>
+                  <p className='text-neutral-700 mb-3'>Section description</p>
+                  <p className='text-sm'>
+                    Fields marked with <span className='text-error-500'>*</span>{' '}
+                    are required.
+                  </p>
+                  <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
 
-                <CheckboxList
-                  label='Label'
-                  caption='Caption'
-                  checkboxes={[
-                    {
-                      children: 'Checkbox 1',
-                      name: 'checkbox-1',
-                      value: 'checkbox-1',
-                    },
-                    {
-                      children: 'Checkbox 2',
-                      name: 'checkbox-2',
-                      value: 'checkbox-2',
-                    },
-                    {
-                      children: 'Checkbox 3',
-                      name: 'checkbox-3',
-                      value: 'checkbox-3',
-                    },
-                  ]}
-                  required
-                />
-                <hr className='my-6 sm:my-8' />
-                <div className='max-w-72'>
-                  <TextInput
+                  <CheckboxList
                     label='Label'
                     caption='Caption'
-                    placeholder='Placeholder'
+                    checkboxes={[
+                      {
+                        children: 'Checkbox 1',
+                        name: 'checkbox-1',
+                        value: 'checkbox-1',
+                      },
+                      {
+                        children: 'Checkbox 2',
+                        name: 'checkbox-2',
+                        value: 'checkbox-2',
+                      },
+                      {
+                        children: 'Checkbox 3',
+                        name: 'checkbox-3',
+                        value: 'checkbox-3',
+                      },
+                    ]}
+                    required
+                  />
+                  <hr className='my-6 sm:my-8' />
+                  <div className='max-w-72'>
+                    <TextInput
+                      label='Label'
+                      caption='Caption'
+                      placeholder='Placeholder'
+                      required
+                    />
+                  </div>
+                  <hr className='my-6 sm:my-8' />
+                  <RadioList
+                    label='Label'
+                    caption='Caption'
+                    name='radio-list-2'
+                    onCheckedChange={() => {}}
+                    radios={[
+                      {
+                        children: 'Radio 1',
+                        value: 'radio-1',
+                      },
+                      {
+                        children: 'Radio 2',
+                        value: 'radio-2',
+                      },
+                      {
+                        children: 'Radio 3',
+                        value: 'radio-3',
+                      },
+                    ]}
                     required
                   />
                 </div>
-                <hr className='my-6 sm:my-8' />
-                <RadioList
-                  label='Label'
-                  caption='Caption'
-                  name='radio-list-1'
-                  onCheckedChange={() => {}}
-                  radios={[
-                    {
-                      children: 'Radio 1',
-                      value: 'radio-1',
-                    },
-                    {
-                      children: 'Radio 2',
-                      value: 'radio-2',
-                    },
-                    {
-                      children: 'Radio 3',
-                      value: 'radio-3',
-                    },
-                  ]}
-                  required
-                />
-              </div>
-            }
-          />
+              }
+            />
+          </div>
         </div>
-        <InlineMessage
-          variant='error'
-          label='There are errors in the form:'
-          caption='• Input label'
-        />
-        <Button label='Save and Continue' variant='primary' />
+
+        <div className='m-auto bg-neutral-200 px-6 sm:bg-transparent sm:p-0'>
+          <InlineMessage
+            variant='error'
+            label='There are errors in the form:'
+            caption='• Input label'
+          />
+          <Button label='Save and Continue' variant='primary' />
+        </div>
       </div>
     </div>
   )
