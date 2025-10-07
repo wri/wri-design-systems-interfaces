@@ -11,6 +11,7 @@ import {
   StepProgressIndicator,
   Tag,
   TextInput,
+  Panel,
 } from '@worldresources/wri-design-systems'
 import { useRef, useState } from 'react'
 
@@ -77,133 +78,60 @@ const MultiPageFormSingleSection = () => {
             }))}
           />
         </div>
-        <div className='w-full sm:border sm:border-neutral-400 bg-neutral-100 sm:rounded-lg sm:shadow-md mb-6'>
-          <div className='flex justify-between items-center px-4 py-3 bg-neutral-200 sm:rounded-t-lg border-b-[1px]'>
-            {currentStep > 1 ? (
-              <button
-                className='flex justify-center items-center gap-1 underline text-neutral-800'
-                onClick={() => setCurrentStep(currentStep - 1)}
-              >
-                <ChevronLeftIcon />
-                <p className='text-neutral-900'>Back</p>
-              </button>
-            ) : (
-              <div />
-            )}
-            <div className='hidden sm:block'>
-              <Tag
-                label='Progress saved to device'
-                variant='success'
-                icon={<InfoIcon />}
-              />
-            </div>
-            <div className='block sm:hidden'>
-              <Menu
-                label={`Step ${currentStep}: ${steps[currentStep - 1].label}`}
-                items={steps.map((step) => ({
-                  ...step,
-                  disabled:
-                    steps.findIndex((s) => s.value === step.value) + 1 >
-                    currentStep,
-                }))}
-                onSelect={(step) =>
-                  setCurrentStep(steps.findIndex((s) => s.value === step) + 1)
-                }
-              />
-            </div>
-          </div>
-          <div className='p-6 sm:py-8'>
-            <p className='text-3xl font-bold text-neutral-800 mb-1'>
-              Section title {currentStep}
-            </p>
-            <p className='text-neutral-700 mb-3'>Section description</p>
-            <p className='text-sm'>
-              Fields marked with <span className='text-error-500'>*</span> are
-              required.
-            </p>
-            <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
-            <CheckboxList
-              label='Label'
-              caption='Caption'
-              checkboxes={[
-                {
-                  children: 'Checkbox 1',
-                  name: 'checkbox-1',
-                  value: 'checkbox-1',
-                },
-                {
-                  children: 'Checkbox 2',
-                  name: 'checkbox-2',
-                  value: 'checkbox-2',
-                },
-                {
-                  children: 'Checkbox 3',
-                  name: 'checkbox-3',
-                  value: 'checkbox-3',
-                },
-              ]}
-              required
-            />
-            <hr className='my-6 sm:my-8' />
-            <div className='max-w-72'>
-              <TextInput
-                label='Label'
-                caption='Caption'
-                placeholder='Placeholder'
-                required
-              />
-            </div>
-            <hr className='my-6 sm:my-8' />
-            <RadioList
-              label='Label'
-              caption='Caption'
-              name='radio-list-1'
-              onCheckedChange={() => {}}
-              radios={[
-                {
-                  children: 'Radio 1',
-                  value: 'radio-1',
-                },
-                {
-                  children: 'Radio 2',
-                  value: 'radio-2',
-                },
-                {
-                  children: 'Radio 3',
-                  value: 'radio-3',
-                },
-              ]}
-              required
-            />
-            {currentStep === 2 && (
-              <div>
-                <hr className='my-6 sm:my-8' />
-                <CheckboxList
-                  label='Label'
-                  caption='Caption'
-                  checkboxes={[
-                    {
-                      children: 'Checkbox 1',
-                      name: 'checkbox-1',
-                      value: 'checkbox-1',
-                    },
-                    {
-                      children: 'Checkbox 2',
-                      name: 'checkbox-2',
-                      value: 'checkbox-2',
-                    },
-                    {
-                      children: 'Checkbox 3',
-                      name: 'checkbox-3',
-                      value: 'checkbox-3',
-                    },
-                  ]}
-                />
+        <div className='overflow-hidden w-full sm:border sm:border-neutral-400 bg-neutral-100 sm:rounded-lg sm:shadow-md mb-6'>
+          <Panel
+            width='full'
+            header={
+              <div className='flex justify-between items-center px-4 py-3 bg-neutral-200 sm:rounded-t-lg border-b-[1px]'>
+                {currentStep > 1 ? (
+                  <button
+                    className='flex justify-center items-center gap-1 underline text-neutral-800'
+                    onClick={() => setCurrentStep(currentStep - 1)}
+                  >
+                    <ChevronLeftIcon />
+                    <p className='text-neutral-900'>Back</p>
+                  </button>
+                ) : (
+                  <div />
+                )}
+                <div className='hidden sm:block'>
+                  <Tag
+                    label='Progress saved to device'
+                    variant='success'
+                    icon={<InfoIcon />}
+                  />
+                </div>
+                <div className='block sm:hidden'>
+                  <Menu
+                    label={`Step ${currentStep}: ${
+                      steps[currentStep - 1].label
+                    }`}
+                    items={steps.map((step) => ({
+                      ...step,
+                      disabled:
+                        steps.findIndex((s) => s.value === step.value) + 1 >
+                        currentStep,
+                    }))}
+                    onSelect={(step) =>
+                      setCurrentStep(
+                        steps.findIndex((s) => s.value === step) + 1,
+                      )
+                    }
+                  />
+                </div>
               </div>
-            )}
-            {currentStep >= 3 && (
-              <div>
-                <hr className='my-6 sm:my-8' />
+            }
+            content={
+              <div className='p-6 sm:py-8'>
+                <p className='text-3xl font-bold text-neutral-800 mb-1'>
+                  Section title {currentStep}
+                </p>
+                <p className='text-neutral-700 mb-3'>Section description</p>
+                <p className='text-sm'>
+                  Fields marked with <span className='text-error-500'>*</span>{' '}
+                  are required.
+                </p>
+                <hr className='mt-5 mb-6 sm:mt-6 sm:mb-8' />
                 <CheckboxList
                   label='Label'
                   caption='Caption'
@@ -224,6 +152,7 @@ const MultiPageFormSingleSection = () => {
                       value: 'checkbox-3',
                     },
                   ]}
+                  required
                 />
                 <hr className='my-6 sm:my-8' />
                 <div className='max-w-72'>
@@ -231,11 +160,94 @@ const MultiPageFormSingleSection = () => {
                     label='Label'
                     caption='Caption'
                     placeholder='Placeholder'
+                    required
                   />
                 </div>
+                <hr className='my-6 sm:my-8' />
+                <RadioList
+                  label='Label'
+                  caption='Caption'
+                  name='radio-list-1'
+                  onCheckedChange={() => {}}
+                  radios={[
+                    {
+                      children: 'Radio 1',
+                      value: 'radio-1',
+                    },
+                    {
+                      children: 'Radio 2',
+                      value: 'radio-2',
+                    },
+                    {
+                      children: 'Radio 3',
+                      value: 'radio-3',
+                    },
+                  ]}
+                  required
+                />
+                {currentStep === 2 && (
+                  <div>
+                    <hr className='my-6 sm:my-8' />
+                    <CheckboxList
+                      label='Label'
+                      caption='Caption'
+                      checkboxes={[
+                        {
+                          children: 'Checkbox 1',
+                          name: 'checkbox-1',
+                          value: 'checkbox-1',
+                        },
+                        {
+                          children: 'Checkbox 2',
+                          name: 'checkbox-2',
+                          value: 'checkbox-2',
+                        },
+                        {
+                          children: 'Checkbox 3',
+                          name: 'checkbox-3',
+                          value: 'checkbox-3',
+                        },
+                      ]}
+                    />
+                  </div>
+                )}
+                {currentStep >= 3 && (
+                  <div>
+                    <hr className='my-6 sm:my-8' />
+                    <CheckboxList
+                      label='Label'
+                      caption='Caption'
+                      checkboxes={[
+                        {
+                          children: 'Checkbox 1',
+                          name: 'checkbox-1',
+                          value: 'checkbox-1',
+                        },
+                        {
+                          children: 'Checkbox 2',
+                          name: 'checkbox-2',
+                          value: 'checkbox-2',
+                        },
+                        {
+                          children: 'Checkbox 3',
+                          name: 'checkbox-3',
+                          value: 'checkbox-3',
+                        },
+                      ]}
+                    />
+                    <hr className='my-6 sm:my-8' />
+                    <div className='max-w-72'>
+                      <TextInput
+                        label='Label'
+                        caption='Caption'
+                        placeholder='Placeholder'
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            }
+          />
         </div>
         <div className='px-6 sm:px-0 sm:mb-6'>
           <InlineMessage
