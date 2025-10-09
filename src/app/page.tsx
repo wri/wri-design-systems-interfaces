@@ -54,6 +54,12 @@ export default function Home() {
                 >
                   Single page form (multiple sections)
                 </Link>
+                <Link
+                  href={ROUTES.SINGLE_PAGE_FORMS.COLLAPSIBLE_SECTIONS}
+                  className='underline cursor-pointer'
+                >
+                  Single page form (collapsible sections)
+                </Link>
                 <hr className='my-2' />
               </div>
             }

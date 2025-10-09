@@ -10,5 +10,6 @@ export const ROUTES = {
   },
   SINGLE_PAGE_FORMS: {
     MULTIPLE_SECTIONS: '/single-page-form/multiple-sections',
+    COLLAPSIBLE_SECTIONS: '/single-page-form/collapsible-sections',
   },
 }
