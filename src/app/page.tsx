@@ -49,6 +49,12 @@ export default function Home() {
                 <hr className='my-2' />
                 <h2 className='text-lg font-bold'>Single Page Forms</h2>
                 <Link
+                  href={ROUTES.SINGLE_PAGE_FORMS.MULTIPLE_SECTIONS}
+                  className='underline cursor-pointer'
+                >
+                  Single page form (multiple sections)
+                </Link>
+                <Link
                   href={ROUTES.SINGLE_PAGE_FORMS.COLLAPSIBLE_SECTIONS}
                   className='underline cursor-pointer'
                 >
