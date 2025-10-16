@@ -11,7 +11,7 @@
   "dependencies": {
     "@chakra-ui/react": "^3.8.1",
     "@emotion/react": "^11.14.0",
-    "@worldresources/wri-design-systems": "^2.133.4",
+    "@worldresources/wri-design-systems": "latest",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
