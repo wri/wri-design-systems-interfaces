@@ -2,48 +2,49 @@ import { ROUTES } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const pages = [
   {
     label: 'Sign In',
     href: ROUTES.AUTH.SIGN_IN,
     category: 'Auth',
-    image: '/images/auth-sign-in.png',
+    image: `${repoBase}/images/auth-sign-in.png`,
   },
   {
     label: 'Sign Up',
     href: ROUTES.AUTH.SIGN_UP,
     category: 'Auth',
-    image: '/images/auth-sign-up.png',
+    image: `${repoBase}/images/auth-sign-up.png`,
   },
   {
     label: 'Single Question',
     href: ROUTES.MULTI_PAGE_FORM.SINGLE_QUESTION,
     category: 'Multi Page Form',
-    image: '/images/multi-page-form-single-question.png',
+    image: `${repoBase}/images/multi-page-form-single-question.png`,
   },
   {
     label: 'Single Section',
     href: ROUTES.MULTI_PAGE_FORM.SINGLE_SECTION,
     category: 'Multi Page Form',
-    image: '/images/multi-page-form-single-section.png',
+    image: `${repoBase}/images/multi-page-form-single-section.png`,
   },
   {
     label: 'Multiple Sections',
     href: ROUTES.SINGLE_PAGE_FORM.MULTIPLE_SECTIONS,
     category: 'Single Page Form',
-    image: '/images/single-page-form-multiple-sections.png',
+    image: `${repoBase}/images/single-page-form-multiple-sections.png`,
   },
   {
     label: 'Collapsible Sections',
     href: ROUTES.SINGLE_PAGE_FORM.COLLAPSIBLE_SECTIONS,
     category: 'Single Page Form',
-    image: '/images/single-page-form-collapsible-sections.png',
+    image: `${repoBase}/images/single-page-form-collapsible-sections.png`,
   },
   {
     label: 'Map Interface',
     href: ROUTES.MAP.MAP_INTERFACE,
     category: 'Map',
-    image: '/images/map-map-interface.png',
+    image: `${repoBase}/images/map-map-interface.png`,
   },
 ]
 
@@ -69,9 +70,7 @@ export default function Home() {
                 <p className='text-xs font-bold text-primary-500'>
                   {page.category}
                 </p>
-                <p className='text-lg font-bold'>
-                  {page.label}
-                </p>
+                <p className='text-lg font-bold'>{page.label}</p>
               </Link>
             </div>
           ))}
