@@ -9,10 +9,11 @@ export const Footer = () => {
   const pathname = usePathname()
 
   const hideFooter =
-    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_QUESTION ||
-    pathname === ROUTES.MULTI_PAGE_FORMS.SINGLE_SECTION ||
-    pathname === ROUTES.SINGLE_PAGE_FORMS.MULTIPLE_SECTIONS ||
-    pathname === ROUTES.SINGLE_PAGE_FORMS.COLLAPSIBLE_SECTIONS
+    pathname === ROUTES.MULTI_PAGE_FORM.SINGLE_QUESTION ||
+    pathname === ROUTES.MULTI_PAGE_FORM.SINGLE_SECTION ||
+    pathname === ROUTES.SINGLE_PAGE_FORM.MULTIPLE_SECTIONS ||
+    pathname === ROUTES.SINGLE_PAGE_FORM.COLLAPSIBLE_SECTIONS ||
+    pathname === ROUTES.MAP.MAP_INTERFACE
   if (hideFooter) {
     return null
   }

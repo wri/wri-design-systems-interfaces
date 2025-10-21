@@ -2,6 +2,9 @@ import { getThemedColor } from '@worldresources/wri-design-systems'
 import type { Config } from 'tailwindcss'
 
 export default {
+  corePlugins: {
+    preflight: false, // ⛔ disables Tailwind's reset completely
+  },
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -64,10 +67,22 @@ export default {
         'error-700': getThemedColor('error', 700),
         'error-800': getThemedColor('error', 800),
         'error-900': getThemedColor('error', 900),
-        'accessible-text-on-primary-mids': getThemedColor('accessible', 'text-on-primary-mids'),
-        'accessible-text-on-secondary-mids': getThemedColor('accessible', 'text-on-secondary-mids'),
-        'accessible-controls-on-neutral-lights': getThemedColor('accessible', 'controls-on-neutral-lights'),
-        'accessible-controls-on-neutral-darks': getThemedColor('accessible', 'controls-on-neutral-darks'),
+        'accessible-text-on-primary-mids': getThemedColor(
+          'accessible',
+          'text-on-primary-mids',
+        ),
+        'accessible-text-on-secondary-mids': getThemedColor(
+          'accessible',
+          'text-on-secondary-mids',
+        ),
+        'accessible-controls-on-neutral-lights': getThemedColor(
+          'accessible',
+          'controls-on-neutral-lights',
+        ),
+        'accessible-controls-on-neutral-darks': getThemedColor(
+          'accessible',
+          'controls-on-neutral-darks',
+        ),
       },
       screens: {
         '1100': '1100px',

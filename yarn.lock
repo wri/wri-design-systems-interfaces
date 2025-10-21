@@ -923,9 +923,9 @@
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
 "@worldresources/wri-design-systems@latest":
-  version "2.136.0"
-  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.136.0.tgz#eab4b6e23a81a373fc6c5583e0a9324ce2e8de13"
-  integrity sha512-tNe0rsUDdknK0QD+j4ILg+rDRg74VMvqaOB4ojxfgiel8XGtNUnE8c07spzInEi/TzzPt0oUxfJoJuuwWW5KUg==
+  version "2.138.2"
+  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.138.2.tgz#3115b6a5937fbcaf337fa9b582299153767681bc"
+  integrity sha512-wVXNH0PDoEECfiPCJzpgAJw+YVaLBt3uKIwDAtfhb2fUBMtgOb2EFD6Sn10SyKyqaa/SJNScC2yW3ARI44ns5w==
 
 "@zag-js/accordion@1.12.0":
   version "1.12.0"

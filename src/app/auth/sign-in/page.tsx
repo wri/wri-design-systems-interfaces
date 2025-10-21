@@ -15,7 +15,7 @@ const SignIn = () => {
   const [showError, setShowError] = useState(false)
 
   return (
-    <div className='w-full flex flex-col-reverse 1121:flex-row items-center justify-between gap-8 lg:gap-16 1121:gap-6 mb-52 sm:mb-48 lg:mb-0 mt-12 lg:mt-24 1121:mt-0 1121:py-20 1121:pl-5 1200:pl-10'>
+    <div className='w-full flex flex-col-reverse 1121:flex-row items-center justify-between gap-8 lg:gap-16 1121:gap-6 mb-12 lg:mb-0 1121:py-20 1121:pl-5 1200:pl-10'>
       <div className='max-w-[440px] w-full px-3 sm:px-5'>
         <div>
           <p className='text-3xl font-bold mb-2'>Sign into your account</p>
