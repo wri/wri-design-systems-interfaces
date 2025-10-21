@@ -13,6 +13,7 @@ import { useState } from 'react'
 
 const SignIn = () => {
   const [showError, setShowError] = useState(false)
+  console.log(11, process.env.NEXT_PUBLIC_BASE_PATH)
 
   return (
     <div className='w-full flex flex-col-reverse 1121:flex-row items-center justify-between gap-8 lg:gap-16 1121:gap-6 mb-12 lg:mb-0 1121:py-20 1121:pl-5 1200:pl-10'>
