@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
+
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  basePath: repoBase,
+  assetPrefix: repoBase.endsWith('/') ? repoBase : `${repoBase}/`,
+  images: { unoptimized: true },
+}
 
-export default nextConfig;
+export default nextConfig
