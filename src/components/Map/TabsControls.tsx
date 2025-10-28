@@ -1,18 +1,29 @@
 'use client'
 
-import { Sheet, TabBar } from '@worldresources/wri-design-systems'
-import { useState } from 'react'
+import { MobileTabBar, Sheet } from '@worldresources/wri-design-systems'
+import { useRef, useState } from 'react'
 import LayerPanel from './LayerPanel'
 import LegendPanel from './LegendPanel'
 import BaseMapContent from './BaseMapSettings/BaseMapContent'
 import clsx from 'clsx'
+import { PlaceholderIcon } from '../icons'
+
+type TabValue = 'add-data' | 'legend' | 'base-map'
 
 const TabsControls = () => {
-  const [tabValue, setTabValue] = useState('add-data')
+  const [tabValue, setTabValue] = useState<TabValue>('add-data')
   const [isOpenSheet, setIsOpenSheet] = useState(true)
+  const addDataTabRef = useRef<HTMLButtonElement>(null)
+  const legendTabRef = useRef<HTMLButtonElement>(null)
+  const baseMapTabRef = useRef<HTMLButtonElement>(null)
+  const refs = {
+    'add-data': addDataTabRef,
+    legend: legendTabRef,
+    'base-map': baseMapTabRef,
+  }
 
   const handleOnTabClick = (tabValue: string) => {
-    setTabValue(tabValue)
+    setTabValue(tabValue as TabValue)
     setIsOpenSheet(true)
   }
 
@@ -24,7 +35,7 @@ const TabsControls = () => {
   }
 
   return (
-    <div className='h-[115px] w-screen sm:max-w-[400px] relative'>
+    <div className='h-full w-screen sm:max-w-[400px] relative'>
       <div className='w-full absolute bottom-10'>
         {isOpenSheet ? (
           <Sheet
@@ -32,10 +43,15 @@ const TabsControls = () => {
             content={content}
             minimizedHeight={80}
             midHeight={300}
+            maxFullHeight={400}
             open={isOpenSheet}
-            onClose={() => setIsOpenSheet(false)}
+            onClose={() => {
+              setIsOpenSheet(false)
+              refs[tabValue]?.current?.focus()
+            }}
             blocking={false}
             zIndex={1000}
+            defaultSnap='mid'
           />
         ) : null}
       </div>
@@ -45,25 +61,28 @@ const TabsControls = () => {
           isOpenSheet ? '' : 'sm:rounded-t-2xl',
         )}
       >
-        <TabBar
-          defaultValue={tabValue}
+        <MobileTabBar
           tabs={[
             {
               label: 'Add Data',
               value: 'add-data',
-              onClick: () => handleOnTabClick('add-data'),
+              icon: <PlaceholderIcon />,
+              ref: addDataTabRef,
             },
             {
               label: 'Legend',
               value: 'legend',
-              onClick: () => handleOnTabClick('legend'),
+              icon: <PlaceholderIcon />,
+              ref: legendTabRef,
             },
             {
               label: 'Base Map',
               value: 'base-map',
-              onClick: () => handleOnTabClick('base-map'),
+              icon: <PlaceholderIcon />,
+              ref: baseMapTabRef,
             },
           ]}
+          onTabClick={(value) => handleOnTabClick(value)}
         />
       </div>
     </div>
