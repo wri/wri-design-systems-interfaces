@@ -954,10 +954,10 @@
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz#7fd81d89e34a711d398ca87f6d5842735d49721e"
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
-"@worldresources/wri-design-systems@latest":
-  version "2.139.0"
-  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.139.0.tgz#93f1642647b49dd34adb549dc74007fb477effd2"
-  integrity sha512-WtYKjvqs7XqwtHbRztZbzLc/pCR3ulPPl2D6wPXIF+puoWUdgj6BW+O0VvEuUTyoBS/gKB9k+eReFdLzcv6obA==
+"@worldresources/wri-design-systems@^2.141.0":
+  version "2.141.0"
+  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.141.0.tgz#6f5057dbf642329082c9bc8d360ca02c2d426e0e"
+  integrity sha512-VVbZ0wwhqDUpcEcuHhcrGOX/JGZI4wIgORLQ9RnkJb0P7y0qYZ/Dz1fZg1c3K77KlaZi7Rq9aX2ug70uEVngRQ==
   dependencies:
     react-spring-bottom-sheet "^3.4.1"
 
