@@ -8,7 +8,11 @@ import TabsControls from '@/components/Map/TabsControls'
 import useResponsiveFlags from '@/hooks/useResponsiveFlags'
 
 const MapInterface = () => {
-  const { isSmallTablet, isMobile } = useResponsiveFlags()
+  const { isWindowReady, isSmallTablet, isMobile } = useResponsiveFlags()
+
+  if (!isWindowReady) {
+    return null
+  }
 
   return (
     <div className='h-full w-full flex relative'>
