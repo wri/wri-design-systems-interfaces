@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <div className='App pb-40'>
       <div className='max-w-[1024px] mx-auto px-5'>
-        <h1 className='text-2xl font-bold text-center pt-8 pb-5'>
+        <h1 className='text-3xl font-bold text-center pt-8 pb-5'>
           WRI Design Systems Interfaces
         </h1>
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-10'>

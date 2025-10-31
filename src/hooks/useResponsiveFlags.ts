@@ -8,12 +8,14 @@ const queries = {
 }
 
 const useResponsiveFlags = () => {
+  const isWindowReady = typeof window !== 'undefined'
+
   const [isSmallTablet, isMobile] = useMediaQuery([
     queries.isSmallTablet,
     queries.isMobile,
   ])
 
-  return { isSmallTablet, isMobile }
+  return { isWindowReady, isSmallTablet, isMobile }
 }
 
 export { queries as responsiveQueries }

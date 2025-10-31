@@ -52,10 +52,7 @@ const MultiPageFormSingleSection = () => {
   }
 
   return (
-    <div
-      className='flex flex-col items-center justify-start mb-16'
-      ref={scrollToRef}
-    >
+    <div className='flex flex-col items-center justify-start' ref={scrollToRef}>
       <div className='h-12 w-full px-4 sm:hidden flex items-center justify-between'>
         <WriLogoIcon height='32px' width='92px' />
         <Tag
