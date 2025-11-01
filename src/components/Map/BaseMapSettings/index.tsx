@@ -31,6 +31,7 @@ const BaseMapSettings = () => {
           overflow: 'hidden',
           transition: 'height 0.3s ease-in-out',
         }}
+        aria-hidden={!isOpenBaseMap}
       >
         <BaseMapContent
           defaultOption={selectedOption}
@@ -42,7 +43,7 @@ const BaseMapSettings = () => {
         style={{ width: '260px' }}
         variant='secondary'
         leftIcon={<MapIcon />}
-        label={`Base map: ${selectedOption?.label}`}
+        aria-label={`Base map: ${selectedOption?.label}`}
         rightIcon={
           isOpenBaseMap ? <ChevronDownIcon rotate='180' /> : <ChevronDownIcon />
         }
