@@ -109,95 +109,98 @@ const MultiPageFormSingleQuestion = () => {
             }
             content={
               <div className='p-6 sm:p-8'>
-                <p className='text-3xl font-bold text-neutral-900'>
+                <p className='text-3xl font-bold text-neutral-900 mb-1'>
                   Label {currentStep}
                 </p>
-                {currentStep === 1 && (
-                  <CheckboxList
-                    label=''
-                    caption='Caption'
-                    checkboxes={[
-                      {
-                        children: 'Checkbox 1',
-                        name: 'checkbox-1',
-                        value: 'checkbox-1',
-                      },
-                      {
-                        children: 'Checkbox 2',
-                        name: 'checkbox-2',
-                        value: 'checkbox-2',
-                      },
-                      {
-                        children: 'Checkbox 3',
-                        name: 'checkbox-3',
-                        value: 'checkbox-3',
-                      },
-                    ]}
-                  />
-                )}
-                {currentStep === 2 && (
-                  <div className='max-w-72'>
-                    <TextInput
+
+                <div>
+                  {currentStep === 1 && (
+                    <CheckboxList
                       label=''
                       caption='Caption'
-                      placeholder='Placeholder'
+                      checkboxes={[
+                        {
+                          children: 'Checkbox 1',
+                          name: 'checkbox-1',
+                          value: 'checkbox-1',
+                        },
+                        {
+                          children: 'Checkbox 2',
+                          name: 'checkbox-2',
+                          value: 'checkbox-2',
+                        },
+                        {
+                          children: 'Checkbox 3',
+                          name: 'checkbox-3',
+                          value: 'checkbox-3',
+                        },
+                      ]}
                     />
-                  </div>
-                )}
-                {currentStep === 3 && (
-                  <RadioList
-                    label=''
-                    caption='Caption'
-                    name='radio-list-1'
-                    onCheckedChange={() => {}}
-                    radios={[
-                      {
-                        children: 'Radio 1',
-                        value: 'radio-1',
-                      },
-                      {
-                        children: 'Radio 2',
-                        value: 'radio-2',
-                      },
-                      {
-                        children: 'Radio 3',
-                        value: 'radio-3',
-                      },
-                    ]}
-                  />
-                )}
-                {currentStep === 4 && (
-                  <CheckboxList
-                    label=''
-                    caption='Caption'
-                    checkboxes={[
-                      {
-                        children: 'Checkbox 1',
-                        name: 'checkbox-1',
-                        value: 'checkbox-1',
-                      },
-                      {
-                        children: 'Checkbox 2',
-                        name: 'checkbox-2',
-                        value: 'checkbox-2',
-                      },
-                      {
-                        children: 'Checkbox 3',
-                        name: 'checkbox-3',
-                        value: 'checkbox-3',
-                      },
-                    ]}
-                  />
-                )}
-                {currentStep === 5 && (
-                  <div className='max-w-72'>
-                    <TextInput
+                  )}
+                  {currentStep === 2 && (
+                    <div className='max-w-72'>
+                      <TextInput
+                        label=''
+                        caption='Caption'
+                        placeholder='Placeholder'
+                      />
+                    </div>
+                  )}
+                  {currentStep === 3 && (
+                    <RadioList
                       label=''
                       caption='Caption'
-                      placeholder='Placeholder'
+                      name='radio-list-1'
+                      onCheckedChange={() => {}}
+                      radios={[
+                        {
+                          children: 'Radio 1',
+                          value: 'radio-1',
+                        },
+                        {
+                          children: 'Radio 2',
+                          value: 'radio-2',
+                        },
+                        {
+                          children: 'Radio 3',
+                          value: 'radio-3',
+                        },
+                      ]}
                     />
-                  </div>
-                )}
+                  )}
+                  {currentStep === 4 && (
+                    <CheckboxList
+                      label=''
+                      caption='Caption'
+                      checkboxes={[
+                        {
+                          children: 'Checkbox 1',
+                          name: 'checkbox-1',
+                          value: 'checkbox-1',
+                        },
+                        {
+                          children: 'Checkbox 2',
+                          name: 'checkbox-2',
+                          value: 'checkbox-2',
+                        },
+                        {
+                          children: 'Checkbox 3',
+                          name: 'checkbox-3',
+                          value: 'checkbox-3',
+                        },
+                      ]}
+                    />
+                  )}
+                  {currentStep === 5 && (
+                    <div className='max-w-72'>
+                      <TextInput
+                        label=''
+                        caption='Caption'
+                        placeholder='Placeholder'
+                      />
+                    </div>
+                  )}
+                </div>
 
                 <Button
                   label={
