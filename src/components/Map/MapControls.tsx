@@ -1,6 +1,6 @@
 'use client'
 
-import { MapControls as WriMapControls } from '@worldresources/wri-design-systems'
+import { MapControlsToolbar } from '@worldresources/wri-design-systems'
 
 const MapControls = () => {
   return (
@@ -12,16 +12,17 @@ const MapControls = () => {
         gap: '12px',
       }}
     >
-      <WriMapControls.Zoom
+      <MapControlsToolbar
         onZoomInClick={() => {}}
         onZoomOutClick={() => {}}
+        onExpandClick={() => {}}
+        onShareClick={() => {}}
+        onPrintClick={() => {}}
+        onSettingsClick={() => {}}
+        onQuestionClick={() => {}}
         vertical
+        showExpandedToggle
       />
-      <WriMapControls.Expand onClick={() => {}} />
-      <WriMapControls.Share onClick={() => {}} />
-      <WriMapControls.Print onClick={() => {}} />
-      <WriMapControls.Settings onClick={() => {}} />
-      <WriMapControls.Question onClick={() => {}} />
     </div>
   )
 }
