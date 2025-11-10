@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Button, getThemedColor } from '@worldresources/wri-design-systems'
 import { ChevronDownIcon, MapIcon } from '../../icons'
 import BaseMapContent from './BaseMapContent'
@@ -15,6 +15,13 @@ const BaseMapSettings = () => {
     active: true,
   })
   const [isOpenBaseMap, setIsOpenBaseMap] = useState(false)
+  const baseMapContainerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (baseMapContainerRef.current) {
+      baseMapContainerRef.current.inert = !isOpenBaseMap
+    }
+  }, [isOpenBaseMap])
 
   return (
     <div
@@ -26,6 +33,7 @@ const BaseMapSettings = () => {
       }}
     >
       <div
+        ref={baseMapContainerRef}
         style={{
           height: isOpenBaseMap ? '400px' : 0,
           overflow: 'hidden',
