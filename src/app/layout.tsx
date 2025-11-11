@@ -35,9 +35,7 @@ export default function RootLayout({
       <body className={`${acuminPro.className} antialiased`}>
         <Providers>
           <Navbar />
-          {/* <div className='min-h-[calc(100vh-56px-48px)] lg:min-h-[calc(100vh-56px-96px)] 1121:min-h-[calc(100vh-56px-48px)] overflow-y-auto bg-red-200'> */}
-            {children}
-          {/* </div> */}
+          {children}
           <Footer />
         </Providers>
       </body>

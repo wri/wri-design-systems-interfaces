@@ -1,7 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, Navbar as WriNavbar } from '@worldresources/wri-design-systems'
+import {
+  Avatar,
+  Menu,
+  Navbar as WriNavbar,
+} from '@worldresources/wri-design-systems'
 import Link from 'next/link'
 import { WriLogoIcon } from './icons'
 import { usePathname } from 'next/navigation'
@@ -100,6 +104,17 @@ const Navbar = () => {
         },
       ]}
       utilitySection={[
+        <div
+          key='avatar'
+          style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+        >
+          <Avatar
+            name='John Doe'
+            src='https://bit.ly/sage-adebayo'
+            notificationCount={3}
+          />
+          <p>My Account</p>
+        </div>,
         <Menu
           key='language-menu'
           label={
