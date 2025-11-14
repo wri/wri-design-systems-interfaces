@@ -14,5 +14,6 @@ export const ROUTES = {
   },
   MAP: {
     MAP_INTERFACE: '/map/map-interface',
-  }
+  },
+  ARTICLE: '/article',
 }

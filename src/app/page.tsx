@@ -46,6 +46,12 @@ const pages = [
     category: 'Map',
     image: `${repoBase}/images/map-map-interface.png`,
   },
+  {
+    label: 'Embedded Form',
+    href: ROUTES.ARTICLE,
+    category: 'Article',
+    image: `${repoBase}/images/article-embedded-form.png`,
+  },
 ]
 
 export default function Home() {
