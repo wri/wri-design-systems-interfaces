@@ -31,7 +31,7 @@ const MapInterface = () => {
       ) : null}
 
       {!isMobile ? (
-        <div className='h-full p-5 absolute top-0 right-0'>
+        <div className='h-full p-5 absolute top-0 right-0 z-50'>
           <MapControls />
         </div>
       ) : null}
