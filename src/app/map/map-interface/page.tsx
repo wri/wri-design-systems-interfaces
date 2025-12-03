@@ -25,7 +25,7 @@ const MapInterface = () => {
       ) : null}
 
       {!isSmallTablet ? (
-        <div className='h-full p-5 absolute top-0 left-80'>
+        <div className='h-full p-5 absolute top-0 left-80 overflow-y-hidden'>
           <LegendPanel />
         </div>
       ) : null}
