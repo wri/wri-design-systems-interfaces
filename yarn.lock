@@ -990,10 +990,10 @@
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz#7fd81d89e34a711d398ca87f6d5842735d49721e"
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
-"@worldresources/wri-design-systems@^2.164.0":
-  version "2.164.0"
-  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.164.0.tgz#ed0f1d8e36dabbf15f86f049d60db87ca20a2dad"
-  integrity sha512-rsNTCguzoLGjj+j7nYIyWdplnXOtAKizzBVxWzIS8fpUXw//Av8mcuPV+zC9Uf+sk1oXsfV6bvsUsSoh5uI57A==
+"@worldresources/wri-design-systems@^2.165.0":
+  version "2.165.0"
+  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.165.0.tgz#cca1b7e52d7524516c7e59d1ec277933cb4d7290"
+  integrity sha512-6dNiNeiiPXDVEIb3swIPiW3K07SGa/YMQUvEbe2I+ojwFOa0H/iXHMZvr23gPYgIOAhGP852nNIZm4P2uqSSIw==
   dependencies:
     "@floating-ui/react" "^0.27.16"
     react-spring-bottom-sheet "^3.4.1"
