@@ -6,6 +6,29 @@ import LegendPanel from '@/components/Map/LegendPanel'
 import MapControls from '@/components/Map/MapControls'
 import TabsControls from '@/components/Map/TabsControls'
 import useResponsiveFlags from '@/hooks/useResponsiveFlags'
+import { Search } from '@worldresources/wri-design-systems'
+import { MapIcon } from '@/components/icons'
+
+const sampleOptions = [
+  {
+    id: '1',
+    label: 'Location Name 1',
+    caption: 'City • Address',
+    icon: <MapIcon />,
+  },
+  {
+    id: '2',
+    label: 'Location Name 2',
+    caption: 'City • Address',
+    icon: <MapIcon />,
+  },
+  {
+    id: '3',
+    label: 'Location Name 3',
+    caption: 'City • Address',
+    icon: <MapIcon />,
+  },
+]
 
 const MapInterface = () => {
   const { isWindowReady, isSmallTablet, isMobile } = useResponsiveFlags()
@@ -31,8 +54,14 @@ const MapInterface = () => {
       ) : null}
 
       {!isMobile ? (
-        <div className='h-full p-5 absolute top-0 right-0 z-50'>
-          <MapControls />
+        <div className='absolute top-0 right-0 z-50 h-full p-5 flex items-start gap-3'>
+          <div style={{ marginTop: '-8px' }}>
+            <Search options={sampleOptions} />
+          </div>
+
+          <div>
+            <MapControls />
+          </div>
         </div>
       ) : null}
 
