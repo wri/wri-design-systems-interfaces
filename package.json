@@ -9,13 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/charts": "^3.30.0",
     "@chakra-ui/react": "^3.8.1",
     "@emotion/react": "^11.14.0",
     "@worldresources/wri-design-systems": "^2.165.0",
     "clsx": "^2.1.1",
     "next": "15.1.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "recharts": "^3.6.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

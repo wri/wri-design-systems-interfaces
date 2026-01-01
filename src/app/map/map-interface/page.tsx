@@ -54,7 +54,7 @@ const MapInterface = () => {
       ) : null}
 
       {!isMobile ? (
-        <div className='absolute top-0 right-0 z-50 h-full p-5 flex items-start gap-3'>
+        <div className='absolute top-0 right-0 z-50 h-auto p-5 flex items-start gap-3'>
           <div style={{ marginTop: '-8px' }}>
             <Search options={sampleOptions} />
           </div>
