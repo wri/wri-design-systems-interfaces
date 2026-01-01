@@ -52,6 +52,12 @@ const pages = [
     category: 'Article',
     image: `${repoBase}/images/article-embedded-form.png`,
   },
+    {
+    label: 'Charts',
+    href: ROUTES.CHARTS,
+    category: 'Charts',
+    image: `${repoBase}/images/charts.png`,
+  },
 ]
 
 export default function Home() {
