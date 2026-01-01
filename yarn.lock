@@ -1073,13 +1073,15 @@
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz#7fd81d89e34a711d398ca87f6d5842735d49721e"
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
-"@worldresources/wri-design-systems@^2.165.0":
-  version "2.165.0"
-  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.165.0.tgz#cca1b7e52d7524516c7e59d1ec277933cb4d7290"
-  integrity sha512-6dNiNeiiPXDVEIb3swIPiW3K07SGa/YMQUvEbe2I+ojwFOa0H/iXHMZvr23gPYgIOAhGP852nNIZm4P2uqSSIw==
+"@worldresources/wri-design-systems@^2.176.0":
+  version "2.176.0"
+  resolved "https://registry.yarnpkg.com/@worldresources/wri-design-systems/-/wri-design-systems-2.176.0.tgz#49f3e86e3def6a45fd7e60137d495b752df73a89"
+  integrity sha512-D6VlU+Aphi5xVUPnTA/Pp/U0HkUubaYG+lqtxj2cHGTWi3ak7QQbERr8A48booYC/mkN2naJ73ezrQPDPAtpfA==
   dependencies:
+    "@chakra-ui/charts" "^3.30.0"
     "@floating-ui/react" "^0.27.16"
     react-spring-bottom-sheet "^3.4.1"
+    recharts "^3.6.0"
 
 "@xstate/react@^1.2.0":
   version "1.6.3"
