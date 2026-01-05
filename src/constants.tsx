@@ -17,4 +17,5 @@ export const ROUTES = {
   },
   ARTICLE: '/article',
   CHARTS: '/charts',
+  TABULAR_INTERFACES: '/tabular-interfaces',
 }

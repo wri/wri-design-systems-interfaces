@@ -52,11 +52,17 @@ const pages = [
     category: 'Article',
     image: `${repoBase}/images/article-embedded-form.png`,
   },
-    {
+  {
     label: 'Charts',
     href: ROUTES.CHARTS,
     category: 'Charts',
     image: `${repoBase}/images/charts.png`,
+  },
+  {
+    label: 'Tabular Interfaces',
+    href: ROUTES.TABULAR_INTERFACES,
+    category: 'Tabular Interfaces',
+    image: `${repoBase}/images/tabular-interfaces.png`,
   },
 ]
 
