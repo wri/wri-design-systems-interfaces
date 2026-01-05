@@ -28,7 +28,7 @@ import {
   SideBarIcon,
 } from '../../components/icons'
 
-export const columns = [
+const columns = [
   {
     key: 'name',
     label: 'Name',
