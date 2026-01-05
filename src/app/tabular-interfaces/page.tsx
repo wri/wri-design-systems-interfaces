@@ -105,17 +105,16 @@ const TabularInterfaces = () => {
   }
 
   const dataByPage = fullData.slice(startRange, endRange) as RowData[]
-  const renderRow = (rowData: RowData) => (
-    <TableRow>
-      <TableCell>{rowData.name}</TableCell>
-      <TableCell>{rowData.email}</TableCell>
-      <TableCell>{rowData.age}</TableCell>
-    </TableRow>
-  )
+
   const selectableRenderRow = (rowData: RowData) => {
-    const handleOnRowSelected = ({ checked }: any) => {
+    const handleOnRowSelected = ({
+      checked,
+    }: {
+      checked: boolean | string
+    }) => {
+      const isChecked = checked === true || checked === 'true'
       setSelectedRows((current = [] as RowData[]) => {
-        if (checked) {
+        if (isChecked) {
           return [...current, rowData]
         }
 
