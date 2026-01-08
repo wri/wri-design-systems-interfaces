@@ -77,7 +77,7 @@ export default function Home() {
           {pages.map((page) => (
             <div key={page.label}>
               <Link href={page.href} className='cursor-pointer'>
-                <div className='border border-neutral-300 rounded-lg overflow-hidden my-1 mb-2'>
+                <div className='h-[250px] flex items-center justify-center border border-neutral-300 rounded-lg overflow-hidden my-1 mb-2'>
                   <Image
                     src={page.image}
                     alt={page.label}
