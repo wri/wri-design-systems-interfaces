@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup:ai": "node agents/setup-ai.mjs",
+    "postinstall": "node agents/setup-ai.js"
   },
   "dependencies": {
     "@chakra-ui/charts": "^3.30.0",
     "@chakra-ui/react": "^3.8.1",
     "@emotion/react": "^11.14.0",
-    "@worldresources/wri-design-systems": "^2.176.0",
+    "@worldresources/wri-design-systems": "^2.191.2",
     "clsx": "^2.1.1",
     "next": "15.1.7",
     "react": "^19.0.0",
