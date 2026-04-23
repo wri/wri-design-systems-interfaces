@@ -107,19 +107,6 @@ const MapTooltip = ({ lat, lng, children }: MapTooltipProps) => {
 
 ---
 
-## Naming Conventions
-
-| Thing | Convention | Example |
-|---|---|---|
-| Components | PascalCase | `UserProfileCard` |
-| Props / variables | camelCase | `isLoading`, `onSubmit` |
-| Component files | PascalCase | `UserProfileCard.tsx` |
-| Hooks / utils | camelCase | `useMapData.ts` |
-| Story files | `ComponentName.stories.tsx` | `Button.stories.tsx` |
-| Test files | `ComponentName.test.tsx` | `Button.test.tsx` |
-
----
-
 ## Design Tokens
 
 WRI DS tokens are defined as Chakra semantic tokens. **Never hardcode values** that have a token equivalent.
