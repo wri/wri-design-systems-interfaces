@@ -16,7 +16,7 @@ Because the library ships its own styles and design tokens, **do not override co
 |---|---|
 | Storybook | https://wri.github.io/wri-design-systems/ |
 | npm | https://www.npmjs.com/package/@worldresources/wri-design-systems |
-| Style guide | https://wri.zeroheight.com/styleguide/ |
+| Style guide | https://wri.zeroheight.com/styleguide/s/120400/p/113cd5-wri-uxui-design-system |
 
 ---
 
@@ -132,7 +132,7 @@ WRI DS tokens are defined as Chakra semantic tokens. **Never hardcode values** t
 <Box bg="brand.primary" />
 ```
 
-If unsure what tokens exist, use the Chakra MCP (`get_theme`) or check the [style guide](https://wri.zeroheight.com/styleguide/).
+If unsure what tokens exist, use the Chakra MCP (`get_theme`) or check the [style guide](https://wri.zeroheight.com/styleguide/s/120400/p/113cd5-wri-uxui-design-system).
 
 ---
 
@@ -165,5 +165,5 @@ const MyButton = () => <button style={{ background: "blue" }}>Click</button>
 |---|---|
 | Does a WRI DS component exist? | [Storybook](https://wri.github.io/wri-design-systems/) or Storybook MCP |
 | What props does a Chakra component accept? | Chakra MCP → `get_component_props` |
-| What design tokens are available? | Chakra MCP → `get_theme` or [Zeroheight](https://wri.zeroheight.com/styleguide/) |
+| What design tokens are available? | Chakra MCP → `get_theme` or [Zeroheight](https://wri.zeroheight.com/styleguide/s/120400/p/113cd5-wri-uxui-design-system) |
 | Where are all custom components in this repo? | "Find in Files" → `[CUSTOM COMPONENT]` |
