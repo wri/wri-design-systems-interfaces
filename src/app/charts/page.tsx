@@ -53,7 +53,7 @@ function CustomTooltip(
             align='flex-start'
           >
             <QualitativeAttribute
-              color={item.color}
+              color={item.color || 'gray'}
               label={<span style={{ color: textColor }}>{item.name}</span>}
               onActionClick={() => {}}
               type='raster'
