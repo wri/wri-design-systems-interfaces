@@ -168,8 +168,6 @@ const TabularInterfaces = () => {
           display: 'flex',
           justifyContent: 'space-between',
           padding: '16px',
-          flexWrap: 'wrap',
-          gap: '16px',
         }}
       >
         <Breadcrumb
@@ -250,8 +248,6 @@ const TabularInterfaces = () => {
           display: 'flex',
           justifyContent: 'space-between',
           padding: '16px',
-          flexWrap: 'wrap',
-          gap: '16px',
         }}
       >
         <div style={{ display: 'flex', gap: '8px' }}>
