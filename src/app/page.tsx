@@ -64,6 +64,12 @@ const pages = [
     category: 'Tabular Interfaces',
     image: `${repoBase}/images/tabular-interfaces.png`,
   },
+  {
+    label: 'Page Header',
+    href: ROUTES.PAGE_HEADER,
+    category: 'Headers',
+    image: `${repoBase}/images/page-header.png`,
+  },
 ]
 
 export default function Home() {
