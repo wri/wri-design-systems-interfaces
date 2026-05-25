@@ -17,6 +17,7 @@ When building components and user interfaces in an application consuming the WRI
 
 3. **Enforce Design Tokens (No Hardcoding)**:
    Import tokens directly from the `@worldresources/wri-design-systems` package:
+
    ```typescript
    import {
      getThemedColor,
@@ -25,8 +26,9 @@ When building components and user interfaces in an application consuming the WRI
      getThemedBorderWidth,
      getThemedFontSize,
      getThemedLineHeight,
-   } from '@worldresources/wri-design-systems';
+   } from '@worldresources/wri-design-systems'
    ```
+
    - Never use raw hex codes (e.g., `#2C7D6E`), `px`, `rem`, or `em` for spacing, border radii, border widths, or font sizes.
    - Use token functions, e.g., `getThemedColor('primary', 500)`, `getThemedSpacing(400)`, `getThemedRadius(300)`.
 
