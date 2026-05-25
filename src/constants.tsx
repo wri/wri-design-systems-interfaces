@@ -19,4 +19,5 @@ export const ROUTES = {
   CHARTS: '/charts',
   TABULAR_INTERFACES: '/tabular-interfaces',
   PAGE_HEADER: '/page-header',
+  LANDING_PAGE: '/landing-page',
 }
