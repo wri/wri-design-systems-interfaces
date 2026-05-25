@@ -70,6 +70,12 @@ const pages = [
     category: 'Headers',
     image: `${repoBase}/images/page-header.png`,
   },
+  {
+    label: 'Restoration Page',
+    href: ROUTES.LANDING_PAGE,
+    category: 'Landing Pages',
+    image: `${repoBase}/images/restoration-landing-page.png`,
+  },
 ]
 
 export default function Home() {

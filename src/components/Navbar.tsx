@@ -126,8 +126,12 @@ const Navbar = () => {
         <p key='wri-apps'>WRI Apps</p>,
       ]}
       actionsSection={[
-        { ariaLabel: 'Create account', onClick: () => {} },
-        { ariaLabel: 'Sign in', onClick: () => {} },
+        {
+          children: 'Create account',
+          ariaLabel: 'Create account',
+          onClick: () => {},
+        },
+        { children: 'Sign in', ariaLabel: 'Sign in', onClick: () => {} },
       ]}
       maxWidth={1440}
       fixed
