@@ -254,17 +254,25 @@ const TabularInterfaces = () => {
           gap: '16px',
         }}
       >
-        <div style={{ display: 'flex', gap: '8px' }}>
-          <div style={{ width: '20rem' }}>
-            <Search
-              size='small'
-              options={searchOptions}
-              placeholder='Search'
-              displayResults='none'
-              onQueryChange={setFilterText}
-            />
+        <div
+          style={{
+            display: 'flex',
+            gap: '8px',
+            flexWrap: 'wrap',
+          }}
+        >
+          <div>
+            <div style={{ width: '20rem' }}>
+              <Search
+                size='small'
+                options={searchOptions}
+                placeholder='Search'
+                displayResults='none'
+                onQueryChange={setFilterText}
+              />
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: '8px', paddingTop: '8px' }}>
+          <div style={{ display: 'flex', gap: '8px' }}>
             <Button
               variant='secondary'
               size='small'
@@ -369,7 +377,7 @@ const TabularInterfaces = () => {
           padding: '16px',
         }}
       >
-        <div style={{ width: '100%', maxWidth: '900px' }}>
+        <div style={{ width: '100%' }}>
           <Table
             columns={columns}
             data={dataByPage}
