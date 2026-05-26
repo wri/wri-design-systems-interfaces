@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const AUDIENCES = [
   {
     label: 'Government agencies:',
@@ -32,7 +34,7 @@ export const TargetAudienceSection = () => {
         <div className='flex-1 w-full'>
           <div className='relative rounded-2xl overflow-hidden aspect-[4/3]'>
             <Image
-              src='/images/is-this-tool-for-you.jpg'
+              src={`${repoBase}/images/is-this-tool-for-you.jpg`}
               alt='People working in a restoration landscape'
               className='object-cover'
               sizes='(max-width: 1024px) 100vw, 50vw'

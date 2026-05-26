@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const CATEGORIES = [
   'cultural',
   'political',
@@ -44,7 +46,7 @@ export const KeyFactorsSection = () => {
               >
                 <div className='flex items-center justify-center'>
                   <Image
-                    src={`/images/${category}.png`}
+                    src={`${repoBase}/images/${category}.png`}
                     alt={category}
                     width={40}
                     height={40}

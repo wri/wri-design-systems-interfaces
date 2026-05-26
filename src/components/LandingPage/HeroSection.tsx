@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import { Button } from '@worldresources/wri-design-systems'
 
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const ExternalLinkIcon = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -51,7 +53,7 @@ export const HeroSection = () => {
 
       <div className='hidden lg:block absolute top-1/2 -translate-y-1/2 right-0 w-[60%] xl:w-[50%] translate-x-[30%]'>
         <Image
-          src='/images/computer-mockup-full.png'
+          src={`${repoBase}/images/computer-mockup-full.png`}
           alt='Restoration Diagnostic tool interface'
           width={1290}
           height={840}
