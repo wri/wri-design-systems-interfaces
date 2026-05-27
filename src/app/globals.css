@@ -1,8 +1,9 @@
-@import "tailwindcss" important;
+@import 'tailwindcss' important;
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   --color-neutral-100: var(--chakra-colors-neutral-100);
   --color-neutral-200: var(--chakra-colors-neutral-200);
