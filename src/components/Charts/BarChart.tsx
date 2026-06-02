@@ -157,7 +157,22 @@ const BarChart = ({
           />
           {showLegend ? (
             <Legend
-              content={<Chart.Legend />}
+              content={<div className='flex items-center justify-center gap-1.5 md:gap-4 mt-2 flex-wrap'>
+                {series?.map((item) => (
+                  <div
+                    className='flex items-center gap-1.5 text-neutral-800'
+                    key={item.name}
+                  >
+                    <div
+                      className='h-4 w-4 rounded-full'
+                      style={{
+                        backgroundColor: item.color ?? getThemedColor('secondary', 600),
+                      }}
+                    />
+                    {item.label}
+                  </div>
+                ))}
+              </div>}
               wrapperStyle={{
                 display: 'flex',
                 justifyContent: 'center',
