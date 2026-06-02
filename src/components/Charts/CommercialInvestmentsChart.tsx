@@ -207,6 +207,7 @@ const CommercialInvestmentsChart = ({
                 },
               ]}
               useCurrencyFormat
+              showLegend
             />
           )}
         </>
