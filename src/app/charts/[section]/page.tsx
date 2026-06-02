@@ -1,5 +1,13 @@
 import TabsHandler from '@/components/Charts/Tabs/TabsHandler'
 
+export function generateStaticParams() {
+  return [
+    { section: 'overview' },
+    { section: 'financial' },
+    { section: 'esg-impact' },
+  ]
+}
+
 const PortfolioPage = async ({
   params,
 }: {
