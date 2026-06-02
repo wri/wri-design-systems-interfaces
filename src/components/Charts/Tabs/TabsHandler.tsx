@@ -7,7 +7,7 @@ import { cn } from '@/utils/styles'
 import { Select } from '@worldresources/wri-design-systems'
 import { CheckCircleIcon } from '@/components/icons/CheckCircle'
 
-const TabsHandler = ({ section }: { section: string }) => {
+const TabsHandler = ({ section = 'overview' }: { section: string }) => {
   const [activeNavPanelItem, setActiveNavPanelItem] = useState('')
   const { isSmallTablet, isMobile } = useResponsiveFlags()
 
