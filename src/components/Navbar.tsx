@@ -120,6 +120,8 @@ const Navbar = () => {
           label={
             languages?.find((l) => l.value === language)?.label || 'Language'
           }
+          selectionMode='radio'
+          hideArrow
           items={languages}
           onSelect={setLanguage}
         />,

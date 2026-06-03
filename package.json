@@ -14,7 +14,7 @@
     "@chakra-ui/charts": "^3.30.0",
     "@chakra-ui/react": "^3.30.0",
     "@emotion/react": "^11.14.0",
-    "@worldresources/wri-design-systems": "^2.191.26",
+    "@worldresources/wri-design-systems": "^2.194.4",
     "clsx": "^2.1.1",
     "date-fns": "^4.3.0",
     "next": "15.5.15",
