@@ -3,9 +3,5 @@ export default function MultiPageFormLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <div className='mx-auto sm:py-16'>
-      {children}
-    </div>
-  )
+  return <div className='mx-auto sm:py-16'>{children}</div>
 }

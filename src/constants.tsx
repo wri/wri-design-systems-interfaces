@@ -18,4 +18,6 @@ export const ROUTES = {
   ARTICLE: '/article',
   CHARTS: '/charts',
   TABULAR_INTERFACES: '/tabular-interfaces',
+  PAGE_HEADER: '/page-header',
+  LANDING_PAGE: '/landing-page',
 }
